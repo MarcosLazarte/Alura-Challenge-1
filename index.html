@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraChallenge#1</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Logo -->
+    <div class="cajaPadre">
+        <div class="cajaHija">
+            <img class="logo" src="assets/Vector.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- Caja de texto para convertir -->
+    <textarea id="cajaTexto" class="cajaTexto" type="text" placeholder="Ingrese el texto aqui"></textarea>
+
+    <!-- Aclaracion -->
+    <div class="aclaracion">
+        <img class="aclaracion_icono" src="assets/icono.png" alt="icono signo admiracion">
+        <p class="aclaracion_texto">Solo letras minúsculas y sin acentos</p>
+    </div>
+
+    <!-- Botones -->    
+    <div class="botones">
+        <button class="botonE" onclick="transformar()">
+            <div class="botonE_text">Encriptar</div>
+        </button>
+        <button class="botonD" onclick="desTransformar()">
+            <div class="botonD_text">Desencriptar</div>
+        </button>
+    </div>
+
+    <!-- Lugar donde se mostrara el texto convertido -->
+    <div id="rectangulo2" class="rectangulo"></div>
+    <div id="rectangulo" class="rectangulo2"></div>
+    <!-- Dibujo -->
+    <img id="munieco" class="munieco" src="assets/Muñeco.png" alt="imagen del muñeco">
+
+    <!-- Texto del dibujo -->
+    <div id="cajaMensajes" class="cajaMensajes">
+        <p class="cajaMensajes_mensaje1">Ningún mensaje fue encontrado</p>
+        <p class="cajaMensajes_mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+    </div>
+
+    <div id="espacio"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
