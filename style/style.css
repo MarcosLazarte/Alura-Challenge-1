@@ -21,7 +21,7 @@
         top: 1.4%;
         bottom: 95.91%;
     }
-    .rectangulo2{
+    .rectangulo2{ /*DIV donde se pone lo traducido*/
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -29,15 +29,13 @@
         gap: 32px;
         
         position: absolute;
-        width: 150px;
+        width: 358.5px;
         height: 350px;
-        left: 10px;
+        left: 15px;
         top: 900px;
         margin-bottom: 500px;
-        
-        /* White */
-        
-        background: #FFFFFF;
+                
+        background-color: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
         
@@ -46,10 +44,6 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 150%;
-        /* or 36px */
-    
-    
-        /* Gray/gray-400 */
     
         color: #495057;
         word-wrap: break-word;
@@ -67,10 +61,10 @@
         
         position: absolute;
         height: 186px;
-        left: 15px;
+        left: 55px;
         top: 900px;
 
-        width: 250px;
+        width: 355px;
     }
     .cajaMensajes_mensaje1{
         width: 263px;
@@ -81,17 +75,11 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 120%;
-        /* or 29px */
         
         text-align: center;
-        
-        /* Gray/gray-500 */
-        
+                
         color: #343A40;
-        
-        
-        /* Inside auto layout */
-        
+                
         flex: none;
         order: 0;
         align-self: stretch;
@@ -106,17 +94,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        /* or 24px */
         
         text-align: center;
-        
-        /* Gray/gray-400 */
-        
+                
         color: #495057;
-        
-        
-        /* Inside auto layout */
-        
+                
         flex: none;
         order: 1;
         align-self: stretch;
@@ -130,7 +112,7 @@
         gap: 24px;
         
         position: absolute;
-        width: 343px;
+        width: 355px;
         height: 158px;
         left: 16px;
         top: 720px;
@@ -142,16 +124,12 @@
         padding: 24px;
         gap: 8px;
         
-        width: 320px;
+        width: 420px;
         height: 67px;
-        
-        /* Dark blue/dark-blue-300 */
-        
+                
         background: #0A3871;
         border-radius: 24px;
-        
-        /* Inside auto layout */
-        
+                
         flex: none;
         order: 0;
         align-self: stretch;
@@ -196,23 +174,17 @@
     .botonD{
         box-sizing: border-box;
 
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
 
-        width: 320px;
+        width: 420px;
         height: 67px;
-
-        /* Dark blue/dark-blue-300 */
 
         border: 1px solid #0A3871;
         border-radius: 24px;
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
@@ -258,9 +230,9 @@
         order: 1;
         flex-grow: 0;
     }
-    .cajaTexto{ 
+    .cajaTexto{ /* Lugar donde se escribe */
         position: absolute;
-        width: 315px;
+        width: 415px;
         height: 500px;
         left: 16px;
         top: 152px;
@@ -270,16 +242,17 @@
         font-weight: 400;
         font-size: 32px;
         line-height: 150%;
-        /* or 48px */
         
         color: #0A3871;
     
         resize: none;
-        /*border: none;*/
+
         word-wrap: break-word;
         background-color: transparent;
         color: #0A3871;
         outline: none;
+
+        border: none;
     }
     ::placeholder{
         color: #0A3871;
@@ -299,7 +272,7 @@
         width: 250px;
         height: 67px;
 
-        right: 75px;
+        left: 105px;
         top: 1200px;
         position: absolute;
 
