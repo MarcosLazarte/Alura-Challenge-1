@@ -81,11 +81,13 @@ function transformar(){
 
     let espacio = document.getElementById("espacio")
     let buttonCopiar = document.createElement('BUTTON');
+    let divCopiar = document.createElement('DIV');
+    let textCopiar = document.createTextNode("Copiar");
+
     buttonCopiar.onclick = copiarClipboard;
     buttonCopiar.className = "botonCopiar";
-    let divCopiar = document.createElement('DIV');
     divCopiar.className = "botonCopiar_texto";
-    let textCopiar = document.createTextNode("Copiar");
+    
     divCopiar.appendChild(textCopiar);
     buttonCopiar.appendChild(divCopiar);
     espacio.appendChild(buttonCopiar);
