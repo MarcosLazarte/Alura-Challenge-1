@@ -157,7 +157,15 @@ function desTransformar(){
 
 function copiarClipboard(){
     let rectangulo = document.getElementById("rectangulo");
-    navigator.clipboard.writeText(rectangulo.innerHTML);
-
-    alert("Se copio el texto a su clipboard: " + rectangulo.innerHTML);
+    //navigator.clipboard.writeText(rectangulo.innerHTML);
+    //alert("Se copio el texto a su clipboard: " + rectangulo.innerHTML);
+    rectangulo.select();
+    rectangulo.setSelectionRange(0,99999);
+    navigator.clipboard.writeText(rectangulo.innerHTML)
+        .then(()=> {
+            alert("Se copio al portapapeles")
+        })
+        .catch(()=> {
+            alert("No se copio bien")
+        })
 }
