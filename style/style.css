@@ -29,7 +29,7 @@
         gap: 32px;
         
         position: absolute;
-        width: 358.5px;
+        width: 338.5px;
         height: 350px;
         left: 15px;
         top: 900px;
@@ -47,6 +47,9 @@
     
         color: #495057;
         word-wrap: break-word;
+
+        caret-color: transparent
+
 
     }
     .munieco{
@@ -361,6 +364,9 @@
 
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
+
+        caret-color: transparent
+
     }
     .munieco{
         display: none;
@@ -874,13 +880,14 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 150%;
-        /* or 36px */
-    
-    
-        /* Gray/gray-400 */
     
         color: #495057;
         word-wrap: break-word;
+
+        border: none;
+        outline: none;
+        caret-color: transparent
+
     }
     .cajaTexto{ 
         position: absolute;
